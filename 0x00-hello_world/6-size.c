@@ -3,7 +3,7 @@
 /**
  * main: Entry point
  *
- * Description: A c program that prints sizeof various types
+ * Description: A c program using sizof to that prints sizeof various types
  *
  * Return: Always 0
  */
