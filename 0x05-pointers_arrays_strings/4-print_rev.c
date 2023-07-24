@@ -13,8 +13,6 @@ void print_rev(char *s)
 	i = len;
 	while (i < len)
 	{
-		if (*(s + i) == '\0')
-			continue;
 		_putchar(*(s + i));
 		i--;
 	}
