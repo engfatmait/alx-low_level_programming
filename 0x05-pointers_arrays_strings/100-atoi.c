@@ -5,8 +5,8 @@
 */
 int _atoi(char *s)
 {
-	int i = 0;
-	int len, str_int;
+	int i, str_int = 0;
+	int len;
 
 	while (s[i] != '\0')
 		len++;
