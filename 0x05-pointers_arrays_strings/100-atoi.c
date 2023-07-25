@@ -9,7 +9,10 @@ int _atoi(char *s)
 	int len;
 
 	while (s[i] != '\0')
+	{
 		len++;
+		i++;
+	}
 	for (; i <= len; i++)
 	{
 		if (s[i] >= 48 && s[i] <= 57)
