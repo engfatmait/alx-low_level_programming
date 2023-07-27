@@ -13,8 +13,8 @@ char *leet(char *s)
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (s[i] == str[i] || s[i] == str[i] - 32)
-				s[i] = leet[i];
+			if (s[j] == str[i] || s[j] == str[i] - 32)
+				s[j] = leet[i];
 		}
 		j++;
 	}
