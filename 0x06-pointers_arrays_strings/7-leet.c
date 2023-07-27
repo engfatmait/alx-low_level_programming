@@ -5,8 +5,8 @@
 */
 char *leet(char *s)
 {
-	char str[] = {'a', 'e', 'o', 't', 'l'};
-	int leet[] = {4, 3, 0, 7, 1};
+	int str[] = {97, 101, 111, 116, 108};
+	int leet[] = {52, 51, 48, 55, 49};
 	int j = 0, i;
 
 	while (s[j] != '\0')
