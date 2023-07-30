@@ -5,7 +5,7 @@
 */
 char *rot13(char *s)
 {
-	int j;
+	int j = 0;
 
 	while (s[j] != '\0')
 	{
