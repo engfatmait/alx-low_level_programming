@@ -5,12 +5,16 @@
 */
 char *rot13(char *s)
 {
-	int j = 0;
+	int i, j = 0;
+	char alph[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	while (s[j] != '\0')
 	{
-		if ((s[j] >= 97 && s[j] <= 122) || (s[j] >= 65 && s[j] <= 90))
-			s[j] = s[j] + 13;
+		for (i = 0; i < 52; i++)
+		{
+		if (s[j] == alph[i])
+			s[j] = ((s[i] + 39) % 52);
+		}
 	j++;
 	}
 	return (s);
