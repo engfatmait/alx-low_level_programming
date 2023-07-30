@@ -5,17 +5,22 @@
 */
 char *rot13(char *s)
 {
-	int i, j = 0;
-	char alph[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int count = 0, i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	while (s[j] != '\0')
+	while (*(s + count) != '\0')
 	{
 		for (i = 0; i < 52; i++)
 		{
-		if (s[j] == alph[i])
-			s[j] = ((s[i] + 39) % 52);
+			if (*(s + count) == alphabet[i])
+			{
+				*(s + count) = rot13[i];
+				break;
+			}
 		}
-	j++;
+		count++;
 	}
+
 	return (s);
 }
