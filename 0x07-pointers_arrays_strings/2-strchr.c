@@ -7,7 +7,6 @@
 char *_strchr(char *s, char c)
 {
 	int i, count = 0;
-	char *strchr;
 
 	while (s[count] != '\0')
 		count++;
@@ -15,10 +14,9 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			strchr = &s[i];
+			return (&s[i]);
 		}
 		else
 		return ('\0');
 	}
-	return (strchr);
 }
