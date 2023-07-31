@@ -6,7 +6,7 @@
 **/
 char *_strchr(char *s, char c)
 {
-	int i, count = 0;
+	unsigned int i, count = 0;
 
 	while (s[count] != '\0')
 		count++;
