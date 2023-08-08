@@ -7,7 +7,7 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, j, s, s3;
+	unsigned int i = 0, j = 0, s, s3;
 	char *cat;
 
 	while (s1[i] != '\0')
@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 	if (cat == NULL)
 		return (NULL);
 	for (s = 0; s <= i; s++)
-		cat[i] = s1[i];
+		cat[s] = s1[i];
 	for (s3 = 0; s3 < j + 1; s3++)
 	{
 		cat[i] = s2[s3];
