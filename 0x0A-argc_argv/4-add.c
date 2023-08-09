@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 	for (i = 1; i < argc; i++)
 	{
-		if (atol(argv[i]) <= 0 || !isdigit(atol(argv[i])))
+		if (!isdigit(atol(argv[i])))
 		{
 			printf("Error\n");
 			return (1);
