@@ -1,4 +1,5 @@
 #include <variadic_functions.h>
+#include <stdio.h>
 /**
  * print_numbers - function that prints numbers
  * @separator: input string
